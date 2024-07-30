@@ -6,6 +6,9 @@ import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
 import "./App.css";
 
+import FullCoursePage from "./components/AllCourses/FullCoursePage";
+import LearnCard from "./components/AllCourses/LearnCard/LearnCard";
+
 const App = () => {
   return (
     <>
@@ -13,8 +16,11 @@ const App = () => {
         <Header />
 
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
+          <Route  path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<FullCoursePage />} />
+          <Route path="/learn-card" element={ <LearnCard/>} />
+          
         </Routes>
         <Footer />
       </Router>

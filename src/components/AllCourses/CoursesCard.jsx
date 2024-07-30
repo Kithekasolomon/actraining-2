@@ -1,8 +1,11 @@
 import React from "react";
 import "./Courses.css";
 import { coursesCard } from "../../dummydata";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const CoursesCard = () => {
+    const navigate= useNavigate()
   return (
     <>
       <section className="coursesCard">
@@ -48,7 +51,7 @@ const CoursesCard = () => {
                 </h3>
               </div>
 
-              <button className="outline-btn">ENROLL NOW !</button>
+              <Link to="/learn-card"><button className="outline-btn">ENROLL NOW !</button></Link>
             </div>
           ))}
         </div>

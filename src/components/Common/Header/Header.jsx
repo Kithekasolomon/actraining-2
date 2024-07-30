@@ -1,10 +1,17 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./Header.css"
 
 const Header = () => {
-  const [click, setClick] = useState(false)
+    const [click, setClick] = useState(false)
+    const [sticky, setSticky] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+    });
+  }, []);
+
 
   return (
     <>
@@ -29,7 +36,7 @@ const Header = () => {
             </li>
           </ul>
           <div className='start'>
-            <div className='button'>GET STARTED</div>
+            <div className='button'>NEED HELP?</div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}

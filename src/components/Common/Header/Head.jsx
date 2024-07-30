@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Head = () => {
     return (
@@ -7,7 +8,7 @@ const Head = () => {
     <section className='head'>
         <div className='container flexSB'>
           <div className='logo'>
-            <h1>ACENTRIA TRAINING CENTER</h1>
+            <Link to='/'><h1>ACENTRIA TRAINING CENTER</h1></Link>
             <span>ONLINE EDUCATION & TRAINING</span>
           </div>
 
