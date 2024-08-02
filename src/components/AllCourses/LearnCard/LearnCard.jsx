@@ -3,6 +3,7 @@ import "./LearnCard.css";
 import { blog } from "../../../dummydata";
 import pic1 from "../../../assets/pic1.png";
 import pic2 from "../../../assets/pic2.png";
+import { Link } from "react-router-dom";
 
 const LearnCard = () => {
   return (
@@ -94,7 +95,7 @@ const LearnCard = () => {
             </div>
           </div>
           <div className="btn-sec">
-            <button className="learn-now-btn">Start Learning</button>
+            <Link to='/video-card'><button className="learn-now-btn">Start Learning</button></Link>
           </div>
         </div>
       </div>

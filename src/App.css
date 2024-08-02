@@ -8,6 +8,40 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f8f8f8;
 }
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 2;}
+}
+@keyframes slideIn {
+  from {margin-left: 100%;}
+  to {margin-left: 0;}
+}
+/*------------navbar-----------*/
+/*.navbar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navbar a {
+  color: #4d4f51;
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.3s;
+}
+.navbar a.active {
+  color: #E1251B;
+}
+.navbar.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar.icon {
+  display: none;
+}*/
+
 /*------------global-----------*/
 .container {
   max-width: 85%;
